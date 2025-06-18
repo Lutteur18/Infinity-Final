@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Infinity Tanks</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <img src="./Assets/Inverse_Portrait.png" alt="Infinity Tanks Logo" class="logo" />
+    <h1>Infinity Tanks</h1>
+    <nav>
+      <a href="index.html#problems-solutions">Solutions</a>
+      <a href="tanks.html">Tanks</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="hero">
+      <h2>Contact Us</h2>
+      <p>Ready to order or need more info? Fill out the form below and our team will get back to you soon.</p>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <a href="mailto:info@infinitytanks.com" class="cta-btn">Send Message</a>
+          <p class="alternative-contact">Or contact us directly at <a href="mailto:info@infinitytanks.com">info@infinitytanks.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Infinity Tanks. All rights reserved.
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    // Fade-in animation for sections
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+</body>
+</html>

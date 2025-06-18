@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Tanks | Infinity Tanks</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <img src="./Assets/Inverse_Portrait.png" alt="Infinity Tanks Logo" class="logo" />
+    <h1>Infinity Tanks</h1>
+    <nav>
+      <a href="index.html#problems-solutions">Solutions</a>
+      <a href="tanks.html">Tanks</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="hero">
+      <h2>Our Tank Range</h2>
+      <p>Explore our range of compact, stylish, and space-saving water tanks and water-saving systems. Find the perfect fit for your home, business, or garden.</p>
+    </section>
+    <section class="products">
+      <h2>Our Water Tanks & Systems</h2>
+      <div class="product-series">
+        <!-- 400L Patio Pot Water Tank -->
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="Assets/Patio Pots Total Set.png" alt="400L Patio Pot Water Tank">
+          </div>
+          <div class="product-content">
+            <h4>400L Patio Pot Water Tank</h4>
+            <ul class="product-features">
+              <li><strong>Capacity:</strong> 400L</li>
+              <li><strong>Dimensions:</strong> 135cm x 50cm x 90cm</li>
+              <li>Perfect for patios, balconies, and small gardens.</li>
+            </ul>
+            <a href="contact.html" class="cta-btn primary">Enquire</a>
+          </div>
+        </div>
+        <!-- 1600L Slimline Water Tank -->
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="Assets/IMG-20220707-WA0013.jpg" alt="1600L Slimline Water Tank">
+          </div>
+          <div class="product-content">
+            <h4>1600L Slimline Water Tank</h4>
+            <ul class="product-features">
+              <li><strong>Capacity:</strong> 1600L</li>
+              <li><strong>Dimensions:</strong> 267cm x 90cm x 90cm</li>
+              <li>Ideal for narrow spaces and side passages.</li>
+            </ul>
+            <a href="contact.html" class="cta-btn primary">Enquire</a>
+          </div>
+        </div>
+        <!-- 3000L Slimline Water Tank -->
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="Assets/2021-09-26 - PLASTIC-RAINCATHCA-3000L - larger png.png" alt="3000L Slimline Water Tank">
+          </div>
+          <div class="product-content">
+            <h4>3000L Slimline Water Tank</h4>
+            <ul class="product-features">
+              <li><strong>Capacity:</strong> 3000L</li>
+              <li><strong>Dimensions:</strong> 200cm x 70cm x 210cm</li>
+              <li>Maximum storage for larger homes and gardens.</li>
+            </ul>
+            <a href="contact.html" class="cta-btn primary">Enquire</a>
+          </div>
+        </div>
+        <!-- Ecogator Rainwater Filtration & Backfeed System -->
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="\Assets\2019-10-07 - Ecogator - filtration and backfeed system - 02.png" alt="Ecogator Rainwater Filtration & Backfeed System" style="width:200px;height:200px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="product-content">
+            <h4>Ecogator Rainwater Filtration & Backfeed System</h4>
+            <ul class="product-features">
+              <li>Filters rainwater for safe reuse in your home or garden.</li>
+              <li>Automatic mains backfeed for uninterrupted supply.</li>
+              <li>Compact, easy to install, and low maintenance.</li>
+            </ul>
+            <a href="contact.html" class="cta-btn primary">Learn more</a>
+          </div>
+        </div>
+        <!-- Greywater System -->
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="\Assets\GreywaternoBG.png" alt="Greywater System">
+          </div>
+          <div class="product-content">
+            <h4>Greywater System</h4>
+            <ul class="product-features">
+              <li>Recycles water from showers, baths, and laundry for irrigation.</li>
+              <li>Eco-friendly and reduces water bills.</li>
+              <li>Safe, odour-free, and easy to maintain.</li>
+            </ul>
+            <a href="contact.html" class="cta-btn primary">Learn more</a>
+          </div>
+        </div>
+        <!-- Pool Backwash System -->
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="\Assets\PoolBWnoBG.png" alt="Pool Backwash System">
+          </div>
+          <div class="product-content">
+            <h4>Pool Backwash System</h4>
+            <ul class="product-features">
+              <li>Captures and recycles pool backwash water.</li>
+              <li>Reduces water waste and environmental impact.</li>
+              <li>Simple integration with existing pool equipment.</li>
+            </ul>
+            <a href="contact.html" class="cta-btn primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Infinity Tanks. All rights reserved.
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    // Fade-in animation for sections
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+</body>
+</html>
