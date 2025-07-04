@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolkol Hot Tub | Infinity Tanks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Kolkol Hot Tub page custom styles */
+    body {
+      background: #1a3d5d !important;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background: #fff !important;
+      color: #1a3d5d !important;
+      max-width: 600px;
+      margin: 3.5rem auto 3.5rem auto;
+      padding: 2.5rem 2rem 2.5rem 2rem;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .hero::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 8px;
+      background: linear-gradient(90deg, #ffb84d 0%, #ffda7a 100%);
+      border-radius: 24px 24px 0 0;
+      z-index: 3;
+    }
+    .hero h2 {
+      color: #1a3d5d;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+    .hero p {
+      font-size: 1.13rem;
+      color: #333;
+      margin-bottom: 1.2rem;
+      margin-top: 0;
+      text-align: center;
+    }
+    .hero img {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 16px;
+      margin: 2rem auto 1.5rem auto;
+      display: block;
+      box-shadow: 0 4px 24px rgba(26,61,93,0.10);
+      animation: float 3.5s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .product-features {
+      margin: 1.5rem 0 1.5rem 0;
+      padding-left: 1.2rem;
+      font-size: 1.08rem;
+    }
+    .product-features li {
+      margin-bottom: 0.7rem;
+      color: #1a3d5d;
+      position: relative;
+      line-height: 1.6;
+      padding-left: 0.7rem;
+    }
+    .product-features li::before {
+      content: '•';
+      color: #ffb84d;
+      font-size: 1.3rem;
+      position: absolute;
+      left: -1.2rem;
+      top: 0.1rem;
+    }
+    .hero .cta-btn.primary {
+      background: linear-gradient(90deg, #ffb84d 0%, #ffda7a 100%);
+      color: #1a3d5d;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      padding: 0.9rem 2.2rem;
+      font-size: 1.1rem;
+      margin-top: 1.2rem;
+      margin-bottom: 0;
+      box-shadow: 0 2px 8px rgba(255,184,77,0.10);
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .hero .cta-btn.primary:hover {
+      background: #ffb84d;
+      color: #fff;
+    }
+    .hero .relax-note {
+      margin-bottom: 1.2rem;
+      margin-top: 0;
+      font-size: 1.08rem;
+      color: #555;
+      text-align: center;
+      font-style: italic;
+    }
+    @media (max-width: 700px) {
+      .hero { padding: 1.2rem 0.5rem; }
+      .hero img { max-width: 98vw; }
+    }
+    section, .hero {
+      background: #fff !important;
+      color: #222 !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      z-index: 10 !important;
+      position: relative;
+    }
+    section::before, .hero::before {
+      display: none !important;
+      content: none !important;
+      background: none !important;
+      opacity: 0 !important;
+      z-index: -1 !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./Assets/Inverse_Portrait.png" alt="Infinity Tanks Logo" class="logo" />
+    <h1>Kolkol Hot Tub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tanks.html">Tanks</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" style="background:#fff !important;max-width:600px;margin:3.5rem auto 3.5rem auto;padding:2.5rem 2rem 2.5rem 2rem;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,0.07);color:#222;position:relative;z-index:1;">
+      <h2 style="color:#1a3d5d;">Wood-Fired Kolkol Hot Tubs</h2>
+      <p>Enjoy a hot tub wherever you want it—no electricity or installation required! Kolkol’s wood-fired hot tubs are ultra-light, sturdy, and filled with self-expanding foam for insulation. The stainless steel wood-fired stove fits neatly into a corner and is well shielded for safety.</p>
+      <img src="Assets/Kolkol Egg brown beige.jpg" alt="Kolkol Hot Tub" style="max-width:320px;width:100%;border-radius:12px;margin:2rem auto;display:block;">
+      <ul class="product-features" style="margin:1.5rem 0 1.5rem 0;">
+        <li><strong>No electricity or installation needed</strong></li>
+        <li>Heats water to 18–38°C in just 1 hour 45 minutes (5x faster than conventional hot tubs)</li>
+        <li>Ultra-light, durable, and weather-resistant construction</li>
+        <li>Self-expanding foam for excellent insulation</li>
+        <li>Stainless steel wood-fired stove (safe, shielded, corner-fit)</li>
+        <li>Seats up to 4 adults comfortably</li>
+        <li>Easy to install and maintain</li>
+      </ul>
+      <div style="margin-bottom:1.2rem;">Perfect for homes, guesthouses, getaways, and anywhere you want relaxation and luxury.</div>
+      <a href="contact.html" class="cta-btn primary">Enquire Now</a>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Infinity Tanks. All rights reserved.
+  </footer>
+</body>
+</html>
